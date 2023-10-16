@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+header{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header img{
+    height: 45px;
+    margin: 5px;
+}
+
+header nav{
+    margin: 5px;
+}
+
+header nav a{
+    margin: 10px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(158, 30, 255);
+}
+
+header nav a:hover{
+    color: rgb(112, 112, 112);
+}
+
+.portada{
+    display: flex;
+    justify-content: center;
+}
+
+.portada img{
+    height: 550px;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.portada h1{
+    position: absolute;
+    z-index: 100;
+    margin-top: 90px;
+    background: none;
+    letter-spacing: 3px;
+    color: white;
+}
+
+.subtitle{
+    color: white;
+    text-align: center;
+    margin: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-right: 20px;
+}
+
+.card img{
+    height: 240px;
+    border-radius: 5px;
+    min-width: 300px;
+    object-fit: cover;
+}
+
+.card:hover{
+    filter: blur(2px);
+}
+
+.card h3{
+    text-align: center;
+    color: white;
+}
+
+
+.acerca{
+    display: flex;
+    background-color: white;
+}
+
+.acerca iframe{
+    height: 600px;
+    width: 900px;
+}
+
+.testimonios{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonio{
+    margin-right: 20px;
+    background-color: rgba(36, 2, 58, 0.405);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+}
+
+.testimonio img{
+    height: 150px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+
+.testimonio h3{
+    text-align: center;
+    color: white;
+}
+
+
+.testimonio p{
+    color: white;
+    margin: 10px;
+}
+
+.ubicacion{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+
+
+.ubicacion .text{
+    margin: 50px;
+    max-width: 550px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.ubicacion .text p{
+    margin-top: 50px;
+}
+
+.text{
+    margin: 50px;
+    max-width: 550px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.text p{
+    margin-top: 50px;
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+}
+
+footer h4{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+@media (max-width: 890px) {
+
+    header nav a{
+        font-size: 10px;
+    }
+
+    .acerca{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .acerca iframe{
+        width: 100vw;
+    }
+
+    .ubicacion{
+        flex-direction: column;
+    }
+
+    .ubicacion iframe{
+        width: 100vw;
+    }
+
+    .testimonios{
+        flex-wrap: wrap;
+    }
+
+    .testimonio{
+        margin-bottom: 20px;
+    }
+
+    .cards{
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .card img{
+        max-width: 300px;
+    }
+
+    .portada h1{
+        font-size: 20px;
+    }
+  }
